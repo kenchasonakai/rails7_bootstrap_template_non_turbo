@@ -10,7 +10,10 @@
     <%= javascript_include_tag "application" %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="container py-3">
+    <%= render "shared/header" %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
